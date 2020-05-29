@@ -1,0 +1,70 @@
+@font-face {
+  font-family: 'Oswald';
+  src: url(../fonts/Oswald.ttf);
+}
+@font-face {
+  font-family: 'PoetsenOne';
+  src: url(../fonts/PoetsenOne.ttf);
+}
+* {
+  margin: 0;
+  font-family: oswald;
+}
+body {
+  background-color: cornflowerblue;
+}
+header {
+  background-color: rgba(0, 0, 0, 0.2);
+}
+ul {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  align-content: center;
+  text-align: center;
+  margin: auto;
+  max-width: 550px;
+}
+li {
+  list-style: none;
+  padding: 20px;
+  border-radius: 5px 5px 0 0;
+  color: #ffffff;
+}
+li:hover, 
+.selected {
+  background-color: cornflowerblue;
+  border-right: solid 5px rgba(0, 0, 0, 0.3);
+  cursor: pointer;
+}
+div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+}
+h1 {
+  font-family: poetsenone;
+  font-size: 4em;
+  color: #3700ff;
+  text-shadow: 3px 3px 0px #ff00ff;
+}
+h2 {
+  font-family: poetsenone;
+  font-size: 2em;
+  color: #000000;
+  text-shadow: 2px 2px 0px #00ffbf;
+}
+p {
+  text-align: justify;
+  max-width: 500px;
+  font-size: 1.4em;
+  color: #ffffff;
+}
+footer {
+  text-align: center;
+  color: #ffffff;
+}
+.content {
+  height: 80vh;
+}

@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="/assets/css/index.css">
+  <script src="../script/jquerry.js"></script>
+  <script src="../script/ajaxPages.js"></script>
+  <title>Toggable Menu</title>
+</head>
+
+<body>
+  <header>
+    <ul>
+      <li id="home" home>
+        Home
+      </li>
+      <li id="about" about>
+        About
+      </li>
+      <li id="contact" contact>
+        Contact
+      </li>
+    </ul>
+  </header>
+  <div class="content"></div>
+  <footer>
+    <h2> Eduardo Carezia <sup>&copy;</sup></h3>
+  </footer>
+</body>
+<script>
+  $('.content').hide().html(home).show(1000).fadeIn(1500)
+
+  $('li').click(function (e) {
+    e.preventDefault()
+    const acionador = e.target
+
+    $('li').removeClass('selected')
+    $(acionador).toggleClass('selected')
+  })
+  
+  $('[home]').click(function (e) {
+    e.preventDefault()
+    
+    $('.content').hide().html(home).show(1000).fadeIn(1500)
+  })
+  
+  $('[about]').click(function (e) {
+    e.preventDefault()
+    
+    $('.content').hide().html(about).show(1000).fadeIn(1500)
+  })
+  
+  $('[contact]').click(function (e) {
+    e.preventDefault()
+    
+    $('.content').hide().html(contact).show(1000).fadeIn(1500)
+  })
+
+
+</script>
+
+</html>
